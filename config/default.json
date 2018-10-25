@@ -1,0 +1,4 @@
+{
+  "port": 5600,
+  "databaseDNS": "mongodb://localhost:25000/myApp"
+}

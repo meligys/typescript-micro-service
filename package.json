@@ -1,0 +1,43 @@
+{
+  "name": "typescript-micro-service",
+  "version": "1.0.0",
+  "description": "A boilerplate built with Typescript running on NodeJs ",
+  "main": "./src/index.ts",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "start": "npx babel-node --extensions '.ts' ./src/index.ts",
+    "test": "mocha -r ts-node/register src/**/*.spec.ts"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm test"
+    }
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "config": "^2.0.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.3.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@types/config": "0.0.34",
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-typescript": "^7.0.0",
+    "@types/chai": "^4.1.6",
+    "@types/express": "^4.16.0",
+    "@types/mocha": "^5.2.5",
+    "@types/mongoose": "^5.2.20",
+    "chai": "^4.2.0",
+    "husky": "^1.1.2",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.0.1"
+  }
+}
