@@ -1,9 +1,8 @@
-
-var accountsRouter = require('./accounts');
+import AccountController from "../controllers/AccountController";
 
 let routes = function(app: any) {
 
-  app.use('/api/accounts', accountsRouter);
+  app.post('/api/accounts', AccountController.create);
 }
 
 export default routes;
