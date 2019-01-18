@@ -1,13 +1,12 @@
 
 import IAccount from '../interfaces/IAccount';
-//const { check, validationResult } = require('express-validator/check');
-import assert from 'assert';
 
+/** Doing business staff here */
 export default class Account {
 
-  public static defineName(account: IAccount): IAccount {
+  public static whoIsBatman(account: IAccount): IAccount {
     
-    account.name = "Bruce";
+    account.name = "Bruce Wayne";
     return account;
   }
 }
